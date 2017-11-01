@@ -1,0 +1,49 @@
+{
+  "name": "graphql-vsphere",
+  "version": "1.0.0",
+  "description": "graphql-vsphere",
+  "main": "build/index.js",
+  "scripts": {
+    "test": "node ./node_modules/mocha/bin/_mocha --no-timeouts ./build/tests/**/*.test.js",
+    "prepublishOnly": "yarn && gulp compile:publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Azerothian/graphql-vsphere.git"
+  },
+  "author": "Azerothian",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/Azerothian/graphql-vsphere/issues"
+  },
+  "devEngines": {
+    "node": "8.x || 9.x",
+    "npm": "3.x || 4.x || 5.x"
+  },
+  "homepage": "https://github.com/Azerothian/graphql-vsphere#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.0.1",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "dotenv": "^4.0.0",
+    "eslint": "^4.10.0",
+    "expect": "^21.2.1",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^7.0.0",
+    "gulp-eslint": "^4.0.0",
+    "gulp-jest": "^2.0.0",
+    "gulp-mocha": "^4.3.1",
+    "gulp-sourcemaps": "^2.6.1",
+    "jest-cli": "^21.2.1"
+  },
+  "dependencies": {
+    "debug": "^3.1.0",
+    "soap": "^0.23.0",
+    "source-map-support": "^0.5.0"
+  },
+  "peerDependencies": {
+    "graphql": "^0.11.7"
+  }
+}
